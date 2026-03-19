@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚗 Mini Car Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚗 Mini Car Marketplace</h1>
+            <p>Browse our collection and inquire today!</p>
+        </header>
+
+        <section class="cars-section">
+            <h2>Available Cars</h2>
+            <div class="cars-grid" id="carsList">
+                <!-- Cars will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Modal for Inquiry Form -->
+        <div id="inquiryModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close" id="closeBtn">&times;</span>
+                <h2>📮 Inquire About <span id="carName"></span></h2>
+                
+                <form id="inquiryForm">
+                    <div class="form-group">
+                        <label for="carId">Car ID:</label>
+                        <input type="hidden" id="carId" name="carId">
+                        <span id="displayCarId"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="buyerName">Your Name *</label>
+                        <input type="text" id="buyerName" name="buyerName" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="buyerEmail">Email *</label>
+                        <input type="email" id="buyerEmail" name="buyerEmail" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="buyerPhone">Phone Number</label>
+                        <input type="tel" id="buyerPhone" name="buyerPhone" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="What would you like to know about this car?" rows="5"></textarea>
+                    </div>
+
+                    <div id="statusMessage" class="status-message hidden"></div>
+
+                    <button type="submit" class="btn-submit" id="submitBtn">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Mini Car Marketplace. All rights reserved.</p>
+            <p>💡 Built with AJAX & Webhooks for Learning</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

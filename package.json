@@ -1,0 +1,30 @@
+{
+  "name": "mini-car-marketplace",
+  "version": "1.0.0",
+  "description": "A simple car marketplace with AJAX and webhook integration for lab learning",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "AJAX",
+    "webhooks",
+    "car-marketplace",
+    "learning",
+    "web-service-integration"
+  ],
+  "author": "Student Lab",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

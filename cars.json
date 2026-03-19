@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Tesla Model 3",
+    "emoji": "⚡",
+    "price": "$45,000",
+    "year": 2024,
+    "mileage": "5,000 km",
+    "transmission": "Automatic",
+    "description": "Latest electric sedan with incredible performance"
+  },
+  {
+    "id": 2,
+    "name": "Honda Civic",
+    "emoji": "🏎️",
+    "price": "$28,000",
+    "year": 2023,
+    "mileage": "12,000 km",
+    "transmission": "Manual",
+    "description": "Reliable sedan perfect for daily commute"
+  },
+  {
+    "id": 3,
+    "name": "Toyota RAV4",
+    "emoji": "🚙",
+    "price": "$35,000",
+    "year": 2023,
+    "mileage": "8,500 km",
+    "transmission": "Automatic",
+    "description": "Spacious SUV ideal for families"
+  }
+]
